@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -25,7 +25,7 @@ const App = () => {
   }
 
   return (
-    <HashRouter>
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -39,7 +39,7 @@ const App = () => {
         </main>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 };
 
