@@ -244,10 +244,11 @@ const HomePage = () => {
             
             className="relative rounded-2xl shadow-2xl overflow-hidden aspect-video bg-gray-800 group"
             onMouseLeave={() => setIsDeptLogoActive(false)}
-          >
             <h2 className="text-4xl font-bold text-white mb-6 bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
               The Department of Information Technology
           </h2>
+          >
+            
             <img 
               src="/images/deptpic.jpg" 
               alt="IT Department RCCIIT - Department of Information Technology at RCC Institute of Information Technology"
