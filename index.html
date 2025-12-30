@@ -288,30 +288,44 @@
         animation: circuit-pulse 6s ease-in-out infinite;
       }
 
-      /* Floating Event Button */
-      .floating-event-btn {
+      /* Floating Event Logo Button */
+      .floating-event-logo {
         position: fixed;
         bottom: 24px;
         right: 24px;
-        width: 56px;
-        height: 56px;
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #06b6d4, #0891b2);
-        color: #ffffff;
-        font-size: 24px;
+        background: rgba(15, 23, 42, 0.85); /* slate-900 */
+        backdrop-filter: blur(6px);
         display: flex;
         align-items: center;
         justify-content: center;
-        text-decoration: none;
-        z-index: 50;
-        box-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+        z-index: 60;
+        box-shadow: 0 0 18px rgba(6, 182, 212, 0.5);
         transition: transform 0.25s ease, box-shadow 0.25s ease;
       }
       
-      .floating-event-btn:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 25px rgba(6, 182, 212, 0.9);
+      .floating-event-logo img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
       }
+      
+      .floating-event-logo:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 28px rgba(6, 182, 212, 0.9);
+      }
+      @keyframes glowPulse {
+      0% { box-shadow: 0 0 14px rgba(6,182,212,0.4); }
+      50% { box-shadow: 0 0 28px rgba(6,182,212,0.8); }
+      100% { box-shadow: 0 0 14px rgba(6,182,212,0.4); }
+      }
+    
+      .floating-event-logo {
+        animation: glowPulse 4s ease-in-out infinite;
+      }
+
 
     </style>
   <script type="importmap">
@@ -404,13 +418,19 @@
       });
     </script>
     <!-- Floating ICEBERG COSMOS Button -->
-    <a
-      href="https://icebergcosmos.vercel.app" 
-      target="_blank"
-      aria-label="ICEBERG COSMOS 2025–26"
-      class="floating-event-btn"
-    >
-      ❄️
-    </a>
+    <!-- Floating ICEBERG COSMOS Logo -->
+      <a
+        href="https://icebergcosmos.vercel.app"
+        target="_blank"
+        aria-label="ICEBERG COSMOS 2025–26"
+        class="floating-event-logo"
+        title="Visit ICEBERG COSMOS 2025–26"
+      >
+        <img
+          src="/images/ICEBERG_Main_logo.jpeg"
+          alt="ICEBERG COSMOS 2025–26"
+        />
+      </a>
+
 
   </body>
