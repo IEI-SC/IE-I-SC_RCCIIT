@@ -4,11 +4,11 @@ import { IEI_LOGO_IMG } from '../constants';
 
 const navLinks = [
   { path: '/', label: 'Home' },
-  { path: 'https://iceberg-cosmos.vercel.app', label: 'ICEBERG COSMOS 2K25-26' },
   { path: '/events', label: 'Events' },
   { path: '/team', label: 'Team' },
   { path: '/contact', label: 'Contact Us' },
   { path: '/join', label: 'Join Us' },
+  { path: 'https://iceberg-cosmos.vercel.app', label: 'ICEBERG COSMOS 2K25-26' },
 ];
 
 const Header = () => {
