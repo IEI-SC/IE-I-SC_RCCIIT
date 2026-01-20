@@ -74,12 +74,16 @@
   ],
   "url": "https://ie-i-scrcciit.vercel.app/",
   "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/375px-Institution_of_Engineers_%28India%29_Logo.svg.png",
-  "description": "Official Student Chapter of The Institution of Engineers (India) at RCC Institute of Information Technology, Kolkata. Engineering student community for technical workshops, projects, and professional  This chapter is founded by the Dept. of IT",
+  "description": "Official Student Chapter of The Institution of Engineers (India) at RCC Institute of Information Technology, Kolkata. Engineering student community for technical workshops, projects, and professional development. Founded by the Department of Information Technology, RCCIIT.",
   
-  "foundingDate": "2025",
+  "foundingDate": "2025-03",
   "foundingLocation": {
     "@type": "Place",
-    "name": "Kolkata, West Bengal"
+    "name": "Kolkata, West Bengal",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kolkata"
+    }
   },
   
   "parentOrganization": {
@@ -91,7 +95,11 @@
   
   "department": {
     "@type": "CollegeOrUniversity",
-    "name": "Department of Information Technology, RCCIIT"
+    "name": "Department of Information Technology, RCCIIT",
+    "parentOrganization": {
+      "@type": "EducationalOrganization",
+      "name": "RCC Institute of Information Technology"
+    }
   },
   
   "address": {
@@ -103,30 +111,49 @@
     "addressCountry": "IN"
   },
   
-  <!-- Leadership Section - Professional and Appropriate -->
+  <!-- CORRECTED LEADERSHIP SECTION -->
   "employee": [
     {
       "@type": "Person",
       "name": "Debjoy Sarkar",
-      "alternativeName":[ "Debjoyy", "Debjoyy Sarkar" ],
+      "alternateName": "Debjoyy Sarkar",
+      "additionalName": "Debjoyy",
       "jobTitle": "Convenor",
-      "description": " The first convenor of IEI Student Chapter RCCIIT leading the inaguaration and deep foundation of the chapter ",
+      "description": "First convenor of IEI Student Chapter RCCIIT, leading the inauguration and establishing the chapter foundation.",
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Student Convenor",
+        "startDate": "2025-03",
+        "endDate": "Not Yet"
+      },
       "affiliation": {
         "@type": "EducationalOrganization",
-        "name": "RCC Institute of Information Technology"
+        "name": "RCC Institute of Information Technology",
+        "department": "Information Technology"
       },
       "alumniOf": {
-        "@type": "EducationalOrganization",
+        "@type": "CollegeOrUniversity",
         "name": "RCCIIT"
       }
     },
     {
       "@type": "Person",
-      "name": ["Dr. Soumyadip Dhar", "Dr. Hiranmoy Roy"],
-      "jobTitle": "Faculty Advisors",
+      "name": "Dr. Soumyadip Dhar",
+      "jobTitle": "Faculty Advisor",
       "affiliation": {
         "@type": "EducationalOrganization",
-        "name": "RCC Institute of Information Technology"
+        "name": "RCC Institute of Information Technology",
+        "department": "Information Technology"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Dr. Hiranmoy Roy",
+      "jobTitle": "Faculty Advisor",
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": "RCC Institute of Information Technology",
+        "department": "Information Technology"
       }
     }
   ],
