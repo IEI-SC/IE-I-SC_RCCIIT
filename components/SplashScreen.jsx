@@ -6,7 +6,7 @@ const SplashScreen = () => {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center animate-splash-out pointer-events-none">
       <div className="text-center">
         <img
-          src={IEI_LOGO_IMG}
+          src="/images/2.png"
           alt="IEI Logo"
           className="h-40 w-40 md:h-48 md:w-48 mx-auto bg-white p-2 rounded-lg shadow-2xl animate-splash-logo"
         />
