@@ -7,7 +7,7 @@ const SplashScreen = () => {
       <div className="text-center">
         <img
           src="/images/2.png"
-          alt="IEI Logo"
+          alt="IEI IT Logo"
           className="h-40 w-40 md:h-48 md:w-48 mx-auto bg-white p-2 rounded-lg shadow-2xl animate-splash-logo"
         />
         <h1 className="mt-8 text-2xl md:text-4xl font-bold text-white font-algerian-like tracking-wider animate-splash-text opacity-0">
