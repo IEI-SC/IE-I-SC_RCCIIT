@@ -24,7 +24,7 @@ const Header = () => {
               className="flex-shrink-0 flex items-center gap-3 transition-transform transform hover:scale-105"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <img src="/images/3.png" alt="IEI Logo" className="h-10 w-10 object-contain bg-white p-1 rounded-md" />
+              <img src="/images/3.png" alt="IEI IT Logo" className="h-10 w-10 object-contain bg-white p-1 rounded-md" />
               <span className="text-xl font-bold text-brand-text">IE(I)-SC RCCIIT</span>
             </NavLink>
           </div>
