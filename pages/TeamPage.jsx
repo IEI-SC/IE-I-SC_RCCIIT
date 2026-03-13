@@ -164,16 +164,16 @@ const TeamPage = () => {
         // Shuffle the entire array first
         // const shuffledArray = shuffleArray(membersArray);
         
-        const faculty = shuffledArray.filter(member => member.category === 'faculty');
+        const faculty = membersArray.filter(member => member.category === 'faculty');
         
         // Get all student categories separately
-        const convenors = shuffledArray.filter(member => member.category === 'convenor');
-        const committee = shuffledArray.filter(member => member.category === 'committee');
-        const regularMembers = shuffledArray.filter(member => member.category === 'member'); // Only actual 'member' category
-        const tech = shuffledArray.filter(member => member.category === 'tech');
-        const graphics = shuffledArray.filter(member => member.category === 'graphics');
-        const pr = shuffledArray.filter(member => member.category === 'pr');
-        const manage = shuffledArray.filter(member => member.category === 'manage');
+        const convenors = membersArray.filter(member => member.category === 'convenor');
+        const committee = membersArray.filter(member => member.category === 'committee');
+        const regularMembers = membersArray.filter(member => member.category === 'member'); // Only actual 'member' category
+        const tech = membersArray.filter(member => member.category === 'tech');
+        const graphics = membersArray.filter(member => member.category === 'graphics');
+        const pr = membersArray.filter(member => member.category === 'pr');
+        const manage = membersArray.filter(member => member.category === 'manage');
         
         // Create combined members array that includes:
         // 1. Regular members (category = 'member')
