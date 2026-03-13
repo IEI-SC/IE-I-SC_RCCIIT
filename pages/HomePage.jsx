@@ -154,7 +154,7 @@ const HomePage = () => {
         <div className="relative z-10 p-8 flex flex-col items-center">
           <div className="my-6 bg-white p-3 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <img
-              src="/images/3.png"
+              src="/images/Official Logo.png"
               alt="The Institution of Engineers India IEI Logo Official - IEI Student Chapter RCCIIT"
               className="h-28 w-auto object-contain"
               onError={handleImageError}
