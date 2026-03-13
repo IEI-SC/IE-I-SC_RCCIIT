@@ -188,12 +188,12 @@ const TeamPage = () => {
         // Shuffle each category individually as well
         const students = {
           convenors: convenors,
-          committee: committee,
+          committee: shuffleArray(committee),
           members: allMembers, // Includes regular members + convenors + committee
-          tech: tech,
-          graphics: graphics,
-          pr: pr,
-          manage: manage
+          tech: shuffleArray(tech),
+          graphics: shuffleArray(graphics),
+          pr: shuffleArray(pr),
+          manage: shuffleArray(manage)
         };
         
         return { faculty: faculty, students };
