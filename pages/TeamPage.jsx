@@ -162,7 +162,7 @@ const TeamPage = () => {
       // Transform the array response into the expected object structure
       const transformData = (membersArray) => {
         // Shuffle the entire array first
-        const shuffledArray = shuffleArray(membersArray);
+        // const shuffledArray = shuffleArray(membersArray);
         
         const faculty = shuffledArray.filter(member => member.category === 'faculty');
         
@@ -187,16 +187,16 @@ const TeamPage = () => {
         
         // Shuffle each category individually as well
         const students = {
-          convenors: shuffleArray(convenors),
-          committee: shuffleArray(committee),
-          members: shuffleArray(allMembers), // Includes regular members + convenors + committee
-          tech: shuffleArray(tech),
-          graphics: shuffleArray(graphics),
-          pr: shuffleArray(pr),
-          manage: shuffleArray(manage)
+          convenors: convenors,
+          committee: committee,
+          members: allMembers, // Includes regular members + convenors + committee
+          tech: tech,
+          graphics: graphics,
+          pr: pr,
+          manage: manage
         };
         
-        return { faculty: shuffleArray(faculty), students };
+        return { faculty: faculty, students };
       };
       
       const transformedData = transformData(data);
