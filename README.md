@@ -7,7 +7,7 @@
 **Institution of Engineers (India)**  
 *RCC Institute of Information Technology, Kolkata*
 
-![IEI Student Chapter RCCIIT Banner/Logo](https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png)
+![IEI Student Chapter Banner/Logo](https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png)
 
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ie-i-scrcciit.vercel.app)
 [![React](https://img.shields.io/badge/Built_with-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
@@ -19,16 +19,37 @@
 
 Welcome to the official website of the **IEI Student Chapter** at **RCC Institute of Information Technology, Kolkata**. This platform serves as the digital hub for all engineering students interested in technical workshops, project development, and professional growth under the guidance of The Institution of Engineers (India).
 
-## 🌐 Live Website
+## 👥 Faculty Advisors
 
-**🔗 Official Website:** [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app)
+- **Dr. Soumyadip Dhar**
+- **Dr. Hiranmoy Roy**
 
-## Official Logo
+## 👨‍🎓 Student Convenors
 
-<a href="https://ie-i-scrcciit.vercel.app" target="_blank">
-  <img src="https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png" alt="IEI Logo" width="50" height="50" align="center"> 
-  
-</a>
+- **Debjoy Sarkar**
+- **Vageesha Kriti**
+
+## 🌐 Live Website & Official Logo
+
+<div align="left">
+  <table>
+    <tr>
+      <td width="60"><strong>🔗</strong></td>
+      <td><strong>Official Website:</strong> <a href="https://ie-i-scrcciit.vercel.app">https://ie-i-scrcciit.vercel.app</a></td>
+    </tr>
+    <tr>
+      <td><strong>🏷️</strong></td>
+      <td>
+        <a href="https://ie-i-scrcciit.vercel.app" target="_blank">
+          <img src="https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png" alt="IEI Logo" width="50" height="50" align="center" style="margin-right: 8px;">
+          <strong>Official Logo</strong> <em>(click to visit website)</em>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br>
 
 ## 📱 Connect With Us
 
@@ -39,7 +60,7 @@ Welcome to the official website of the **IEI Student Chapter** at **RCC Institut
 | Platform | Link | Status |
 |----------|------|---------|
 | **🌐 Website** | [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app) | ✅ Live |
-| **📧 Email** | [iei.it@rcciit.edu.in](iei.it@rcciit.edu.in) | ✅ Active |
+| **📧 Email** | [iei.it@rcciit,edu.in](mailto:iei.it@rcciit,edu.in) | ✅ Active |
 | **💼 LinkedIn** | [IEI RCCIIT](https://www.linkedin.com/company/ie-i-student-chapter-rcciit/) | ✅ Active |
 | **📘 Facebook** | [IEI RCCIIT](https://www.facebook.com/share/19zGvzcSha/) | ✅ Active |
 | **📷 Instagram** | [@ieircciit](https://www.instagram.com/ieisc_rcciit?igsh=dnpodzk4bDA3YzM4) | ✅ Active |
@@ -61,10 +82,11 @@ Welcome to the official website of the **IEI Student Chapter** at **RCC Institut
 
 ### 🛠 Technical Excellence
 - **Built with React 18** and modern JavaScript
-- **Tailwind CSS** for rapid UI development
-- **Vite** for lightning-fast builds
+- **Backend Framework:** Django
+- **Styling:** Tailwind CSS
+- **Build Tool:** Vite
+- **Deployment:** Vercel
 - **SEO Optimized** with structured data
-- **Performance Focused** (95+ Lighthouse scores)
 
 ### 📊 Website Sections
 - **🎯 Hero Section** - Compelling introduction with clear CTAs
@@ -93,6 +115,7 @@ India
 ## 🔧 Technology Stack
 
 - **Frontend Framework:** React 18
+- **Backend Framework:** Django
 - **Styling:** Tailwind CSS
 - **Build Tool:** Vite
 - **Deployment:** Vercel
@@ -102,7 +125,7 @@ India
 
 Interested in joining IEI Student Chapter or participating in our events?
 
-- 📧 **Email us:** [iei.it@rcciit.edu.in](mailto:iei.it@rcciit.edu.in)
+- 📧 **Email us:** [iei.it@rcciit,edu.in](mailto:iei.it@rcciit,edu.in)
 - 🌐 **Visit our website:** [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app)
 - 📱 **Follow us** on social media for updates
 
@@ -126,8 +149,9 @@ We welcome contributions from students and developers! Feel free to:
 *Department of Information Technology*  
 *RCC Institute of Information Technology, Kolkata*
 
-[![IEI India](https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/80px-Institution_of_Engineers_%28India%29_Logo.svg.png)](https://www.ieindia.org)
-[![RCCIIT](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Regional_Computer_Centre_Institute_Of_Information_Technology.png/80px-Regional_Computer_Centre_Institute_Of_Information_Technology.png)](https://rcciit.org)
+| | |
+|:---:|:---:|
+|[![IEI India](https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/80px-Institution_of_Engineers_%28India%29_Logo.svg.png)](https://www.ieindia.org)|[![RCCIIT](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Regional_Computer_Centre_Institute_Of_Information_Technology.png/80px-Regional_Computer_Centre_Institute_Of_Information_Technology.png)](https://rcciit.org)|
 
 **📍 RCC Institute of Information Technology, Kolkata**  
 **🌐 [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app)**
