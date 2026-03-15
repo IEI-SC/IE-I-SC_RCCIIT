@@ -7,7 +7,7 @@
 **Institution of Engineers (India)**  
 *RCC Institute of Information Technology, Kolkata*
 
-![IEI Banner](https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/375px-Institution_of_Engineers_%28India%29_Logo.svg.png)
+![IEI Student Chapter RCCIIT Banner/Logo](https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png)
 
 [![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=google-chrome&logoColor=white)](https://ie-i-scrcciit.vercel.app)
 [![React](https://img.shields.io/badge/Built_with-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
@@ -32,7 +32,7 @@ Welcome to the official website of the **IEI Student Chapter** at **RCC Institut
 | Platform | Link | Status |
 |----------|------|---------|
 | **🌐 Website** | [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app) | ✅ Live |
-| **📧 Email** | [contact@ieircciit.in](ieiscrcciit@gmail.com) | ✅ Active |
+| **📧 Email** | [iei.it@rcciit.edu.in](iei.it@rcciit.edu.in) | ✅ Active |
 | **💼 LinkedIn** | [IEI RCCIIT](https://www.linkedin.com/company/ie-i-student-chapter-rcciit/) | ✅ Active |
 | **📘 Facebook** | [IEI RCCIIT](https://www.facebook.com/share/19zGvzcSha/) | ✅ Active |
 | **📷 Instagram** | [@ieircciit](https://www.instagram.com/ieisc_rcciit?igsh=dnpodzk4bDA3YzM4) | ✅ Active |
@@ -95,7 +95,7 @@ India
 
 Interested in joining IEI Student Chapter or participating in our events?
 
-- 📧 **Email us:** [ieiscrcciit@gmail.com](mailto:ieiscrcciit@gmail.com)
+- 📧 **Email us:** [iei.it@rcciit.edu.in](mailto:iei.it@rcciit.edu.in)
 - 🌐 **Visit our website:** [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app)
 - 📱 **Follow us** on social media for updates
 
