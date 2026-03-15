@@ -68,7 +68,7 @@ const HomePage = () => {
       "memberOf": {
         "@type": "Organization",
         "name": "The Institution of Engineers (India)"
-      }
+      },
 
       // ADDED: SameAs links for verification
     "sameAs": {
