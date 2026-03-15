@@ -55,7 +55,7 @@ const HomePage = () => {
       "name": "IEI Student Chapter RCCIIT",
       "alternateName": "Institution of Engineers India Student Chapter RCCIIT",
       "url": "https://ie-i-scrcciit.vercel.app/",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/375px-Institution_of_Engineers_%28India%29_Logo.svg.png",
+      "logo": "https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png",
       "description": "Official Student Chapter of The Institution of Engineers (India) at RCC Institute of Information Technology, Kolkata. Engineering student community for technical workshops, projects, and professional development.",
       "address": {
         "@type": "PostalAddress",
@@ -154,7 +154,7 @@ const HomePage = () => {
         <div className="relative z-10 p-8 flex flex-col items-center">
           <div className="my-6 bg-white p-3 rounded-lg shadow-2xl transform hover:scale-105 transition-transform duration-300">
             <img
-              src="/images/Official Logo.png"
+              src="https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png"
               alt="The Institution of Engineers India IEI Logo Official - IEI Student Chapter RCCIIT"
               className="h-28 w-auto object-contain"
               onError={handleImageError}
