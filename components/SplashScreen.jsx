@@ -6,8 +6,8 @@ const SplashScreen = () => {
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center animate-splash-out pointer-events-none">
       <div className="text-center">
         <img
-          src="/images/2.png"
-          alt="IEI IT Logo"
+          src="https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png"
+          alt="IEI Student Chapter RCCIIT Logo"
           className="h-40 w-40 md:h-48 md:w-48 mx-auto bg-white p-2 rounded-lg shadow-2xl animate-splash-logo"
         />
         <h1 className="mt-8 text-2xl md:text-4xl font-bold text-white font-algerian-like tracking-wider animate-splash-text opacity-0">
