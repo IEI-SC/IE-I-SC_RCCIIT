@@ -91,6 +91,31 @@ const HomePage = () => {
     script.textContent = JSON.stringify(structuredData);
     document.head.appendChild(script);
 
+    // ADDED: Open Graph tags for better social sharing
+  let ogImage = document.querySelector('meta[property="og:image"]');
+  if (!ogImage) {
+    ogImage = document.createElement('meta');
+    ogImage.setAttribute('property', 'og:image');
+    document.head.appendChild(ogImage);
+  }
+  ogImage.content = "https://ie-i-scrcciit.vercel.app/Official_ieircciit_Logo.png";
+
+  let ogTitle = document.querySelector('meta[property="og:title"]');
+  if (!ogTitle) {
+    ogTitle = document.createElement('meta');
+    ogTitle.setAttribute('property', 'og:title');
+    document.head.appendChild(ogTitle);
+  }
+  ogTitle.content = "IEI Student Chapter RCCIIT";
+
+  let ogDescription = document.querySelector('meta[property="og:description"]');
+  if (!ogDescription) {
+    ogDescription = document.createElement('meta');
+    ogDescription.setAttribute('property', 'og:description');
+    document.head.appendChild(ogDescription);
+  }
+  ogDescription.content = "Official IEI Student Chapter at RCCIIT Kolkata - Department of Information Technology.";
+
     // Cleanup function
     return () => {
       if (script.parentNode) {
