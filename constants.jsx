@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Replaced the Base64 seal with the official logo URL for consistency
-export const IEI_LOGO_IMG = 'https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/Institution_of_Engineers_%28India%29_Logo.svg/375px-Institution_of_Engineers_%28India%29_Logo.svg.png';
+export const IEI_LOGO_IMG = 'https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png';
 
 export const IEI_LOGO = (
     <img src={IEI_LOGO_IMG} alt="IEI Logo" className="h-10 w-auto object-contain" />
