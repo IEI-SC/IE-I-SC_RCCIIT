@@ -68,14 +68,6 @@ const HomePage = () => {
       "memberOf": {
         "@type": "Organization",
         "name": "The Institution of Engineers (India)"
-      },
-
-      // ADDED: SameAs links for verification
-    "sameAs": {
-      "https://www.facebook.com/people/IEI-Student-Chapter-Rcciit/61580277516704/?rdid=KgNMdfLialfNKTYG&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1A8UNu3DU7%2F",
-      "https://www.linkedin.com/company/ie-i-student-chapter-rcciit/",
-      "https://www.instagram.com/ieisc_rcciit",
-      "https://linktr.ee/ieisc_rcciit"
       }
     };
 
