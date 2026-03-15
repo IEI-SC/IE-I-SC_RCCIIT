@@ -23,6 +23,13 @@ Welcome to the official website of the **IEI Student Chapter** at **RCC Institut
 
 **🔗 Official Website:** [https://ie-i-scrcciit.vercel.app](https://ie-i-scrcciit.vercel.app)
 
+## Official Logo
+
+<a href="https://ie-i-scrcciit.vercel.app" target="_blank">
+  <img src="https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png" alt="IEI Logo" width="50" height="50" align="center"> 
+  
+</a>
+
 ## 📱 Connect With Us
 
 ### 🌐 Social Media
