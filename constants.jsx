@@ -4,7 +4,7 @@ import React from 'react';
 export const IEI_LOGO_IMG = 'https://ie-i-scrcciit.vercel.app/images/Official_ieircciit_Logo.png';
 
 export const IEI_LOGO = (
-    <img src={IEI_LOGO_IMG} alt="IEI Logo" className="h-10 w-auto object-contain" />
+    <img src={IEI_LOGO_IMG} alt="IEI Student Chapter RCCIIT Logo" className="h-10 w-auto object-contain" />
 );
 
 export const EnvelopeIcon = () => (
