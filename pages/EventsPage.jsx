@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://ieisc-rcciit.onrender.com';
+import { api } from '../services/api';
 
 // EventCard component
 const EventCard = ({ event }) => {
@@ -8,8 +7,9 @@ const EventCard = ({ event }) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-  // Use the thumbnail field directly (it's already a full URL)
-  const imageUrl = event.thumbnail;
+  // Thumbnail is a Storage path in Supabase (bucket: event-media)
+  const imageUrl = api.eventThumb(event);
+  const reportUrl = api.eventReport(event);
 
   // Format date
   const formatDate = (dateString) => {
@@ -113,9 +113,9 @@ const EventCard = ({ event }) => {
             </a>
           )}
           
-          {event.report_pdf && (
+          {reportUrl && (
             <a
-              href={`${API_BASE_URL}${event.report_pdf}`}
+              href={reportUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 bg-brand-secondary hover:bg-slate-700 text-white py-2 px-4 rounded-md text-center transition-colors text-sm font-medium border border-slate-600"
@@ -153,15 +153,9 @@ const EventsPage = () => {
   const fetchEvents = async () => {
     try {
       setLoading(true);
-      
-      // Fetch all events
-      const response = await fetch(`${API_BASE_URL}/api/events/`);
-      
-      if (!response.ok) {
-        throw new Error(`Failed to fetch events: ${response.status} ${response.statusText}`);
-      }
-      
-      const eventsData = await response.json();
+
+      // Supabase BaaS: all events, newest first
+      const eventsData = await api.getEvents();
       setEvents(eventsData);
       setError(null);
     } catch (err) {

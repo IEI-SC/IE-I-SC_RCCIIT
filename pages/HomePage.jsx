@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://ieisc-rcciit.onrender.com';
+import { api } from '../services/api';
 
 // Local fallback images
 const fallbackImages = {
@@ -100,12 +99,11 @@ const HomePage = () => {
   const fetchUpcomingEvents = async () => {
   try {
     setLoading(true);
-    
-    // Fetch all events (same as EventsPage)
-    const response = await fetch(`${API_BASE_URL}/api/events/`);
-    
-    if (response.ok) {
-      const eventsData = await response.json();
+
+    // Supabase BaaS: all events, newest first
+    const eventsData = await api.getEvents();
+
+    if (eventsData) {
       
       // Use the exact same filtering logic as EventsPage for ongoing events
       const now = new Date();

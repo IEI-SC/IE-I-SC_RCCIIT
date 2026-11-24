@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
-// API base URL
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://ieisc-rcciit.onrender.com';
+import { api } from '../services/api';
 
 // --- ENUMS ---
 const StudentSubCategory = {
@@ -34,12 +32,15 @@ const MemberCard = ({ member }) => {
   const [imageError, setImageError] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
 
-  // Construct the full image URL
-  const imageUrl = member.image 
-    ? `${API_BASE_URL}${member.image}`
-    : member.imageUrl 
-    ? `${API_BASE_URL}${member.imageUrl}`
-    : null;
+  // Photo is a Storage path in Supabase (bucket: team-images)
+  const imageUrl = api.teamPhoto(member);
+
+  // New schema has `designation`; fall back to a prettified category
+  const roleLabel =
+    member.designation ||
+    (member.category
+      ? member.category.charAt(0).toUpperCase() + member.category.slice(1)
+      : 'Member');
 
   // Check if social links exist in different possible formats
   const linkedinUrl = member.linkedin || member.linkedin_url;
@@ -85,7 +86,7 @@ const MemberCard = ({ member }) => {
       {/* Content Area */}
       <div className="p-4 flex flex-col flex-grow">
         <h3 className="text-lg font-semibold text-white mb-1 line-clamp-1">{member.name}</h3>
-        <p className="text-brand-primary text-sm mb-2 line-clamp-2">{member.role}</p>
+        <p className="text-brand-primary text-sm mb-2 line-clamp-2">{roleLabel}</p>
         
         {/* Social Media Links */}
         {(linkedinUrl || instagramUrl) && (
@@ -143,16 +144,10 @@ const TeamPage = () => {
   const fetchTeamData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(`${API_BASE_URL}/api/team/`);
-      
-      console.log('API Response status:', response.status);
-      
-      if (!response.ok) {
-        throw new Error(`Failed to fetch team data: ${response.status} ${response.statusText}`);
-      }
-      
-      const data = await response.json();
-      console.log('API Data received:', data);
+      // Supabase BaaS: full roster in one query
+      const data = await api.getTeam();
+
+      console.log('Team members loaded:', data.length);
       
       // Let's log the first member to see what fields we're getting
       if (data.length > 0) {
