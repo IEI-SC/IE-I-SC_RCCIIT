@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { EnvelopeIcon } from '../constants';
+import { api } from '../services/api';
 
 // Add missing icon components
 const PhoneIcon = () => (
@@ -20,10 +21,28 @@ const CalendarIcon = () => (
   </svg>
 );
 
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://ieisc-rcciit.onrender.com';
-
 const ContactPage = () => {
   const [activeTab, setActiveTab] = useState('social');
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
+  const [formStatus, setFormStatus] = useState({ state: 'idle', text: '' });
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      setFormStatus({ state: 'error', text: 'Please fill in all fields.' });
+      return;
+    }
+    try {
+      setFormStatus({ state: 'sending', text: 'Sending...' });
+      // Supabase BaaS: stored directly in contact_messages
+      await api.submitContact(form);
+      setForm({ name: '', email: '', message: '' });
+      setFormStatus({ state: 'sent', text: 'Message sent! We will get back to you soon.' });
+    } catch (err) {
+      console.error('Error submitting contact message:', err);
+      setFormStatus({ state: 'error', text: 'Could not send your message. Please try again.' });
+    }
+  };
 
   // Social media links and contact information
   const contactInfo = {
@@ -212,6 +231,51 @@ const ContactPage = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Contact Form (Supabase BaaS) */}
+            <div className="bg-brand-secondary/80 backdrop-blur-sm p-8 rounded-lg shadow-xl mb-8">
+              <h2 className="text-2xl font-bold text-white mb-2 text-center">Send Us a Message</h2>
+              <p className="text-brand-text-muted text-center mb-6">We usually respond within a couple of days.</p>
+              <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
+                    className="w-full bg-brand-background/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-brand-text-muted focus:outline-none focus:border-brand-primary"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
+                    className="w-full bg-brand-background/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-brand-text-muted focus:outline-none focus:border-brand-primary"
+                  />
+                </div>
+                <textarea
+                  placeholder="Your message"
+                  rows="4"
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                  className="w-full bg-brand-background/50 border border-slate-600 rounded-lg px-4 py-3 text-white placeholder:text-brand-text-muted focus:outline-none focus:border-brand-primary"
+                />
+                {formStatus.text && (
+                  <p className={`text-sm text-center ${formStatus.state === 'error' ? 'text-red-400' : 'text-green-400'}`}>
+                    {formStatus.text}
+                  </p>
+                )}
+                <div className="text-center">
+                  <button
+                    type="submit"
+                    disabled={formStatus.state === 'sending'}
+                    className="bg-brand-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-cyan-600 transition-all duration-300 disabled:opacity-50"
+                  >
+                    {formStatus.state === 'sending' ? 'Sending...' : 'Send Message'}
+                  </button>
+                </div>
+              </form>
             </div>
 
             {/* Newsletter Signup */}
